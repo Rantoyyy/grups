@@ -3,28 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ranto-allgrup</title>
-
-<!-- ICON (Remix Icon) -->
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<title>Ranto allgrup</title>
 
 <style>
-/* ===== RESET & BODY ===== */
 body{
   margin:0;
-  background:#6903a8;
+  background:#000;
   color:#fff;
   font-family:Arial,sans-serif;
 }
-
-/* ===== CONTAINER UTAMA ===== */
 .container{
   max-width:420px;
   margin:auto;
   padding:16px;
 }
-
-/* ===== HEADER (THUMBNAIL + PROFIL) ===== */
 .header{
   position:relative;
   text-align:center;
@@ -36,8 +28,6 @@ body{
   object-fit:cover;
   border-radius:18px;
 }
-
-/* ===== PROFIL (TIMPA THUMBNAIL) ===== */
 .profile{
   position:absolute;
   top:50%;
@@ -55,8 +45,6 @@ body{
   font-size:26px;
   font-weight:bold;
 }
-
-/* ===== BUTTON LINK ===== */
 .link-btn{
   background:#400c61;
   color:#fff;
@@ -69,22 +57,13 @@ body{
   margin-bottom:14px;
   font-weight:bold;
 }
-.link-btn i{
-  font-size:22px;
-}
-
-/* ===== SLIDER ADMIN ===== */
 .slider{
   display:flex;
   gap:14px;
   overflow-x:auto;
   padding-bottom:10px;
 }
-.slider::-webkit-scrollbar{
-  display:none;
-}
-
-/* CARD ADMIN */
+.slider::-webkit-scrollbar{display:none;}
 .admin-card{
   min-width:240px;
   height:300px;
@@ -98,8 +77,6 @@ body{
   height:100%;
   object-fit:cover;
 }
-
-/* STATUS ADMIN */
 .admin-status{
   position:absolute;
   top:10px;
@@ -109,8 +86,6 @@ body{
   border-radius:10px;
   font-size:12px;
 }
-
-/* NAMA ADMIN */
 .admin-name{
   position:absolute;
   bottom:10px;
@@ -120,16 +95,12 @@ body{
   border-radius:12px;
   font-weight:bold;
 }
-
-/* ===== CHAT BOT ===== */
 .chat-box{
   background:#d400ff;
   border-radius:18px;
   padding:14px;
   margin-top:24px;
 }
-
-/* PESAN CHAT */
 .chat-msg{
   background:#222;
   padding:12px;
@@ -137,8 +108,6 @@ body{
   margin-bottom:10px;
   white-space:pre-line;
 }
-
-/* TOMBOL SALIN */
 .copy-btn{
   background:#fff;
   color:#000;
@@ -149,8 +118,6 @@ body{
   cursor:pointer;
   margin-bottom:12px;
 }
-
-/* TOMBOL PILIHAN CHAT */
 .chat-btns{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -164,8 +131,6 @@ body{
   border-radius:12px;
   cursor:pointer;
 }
-
-/* ===== POPUP SALIN ===== */
 .popup{
   position:fixed;
   bottom:30px;
@@ -178,9 +143,8 @@ body{
   font-size:13px;
   opacity:0;
   transition:.3s;
-  pointer-events:none;}
-
-/* ===== FOOTER ===== */
+  pointer-events:none;
+}
 .footer{
   text-align:center;
   font-size:12px;
@@ -193,143 +157,112 @@ body{
 <body>
 <div class="container">
 
-<!-- ===== HEADER ===== -->
 <div class="header">
-  <!-- Gambar thumbnail -->
   <img src="https://pomf2.lain.la/f/n6bai77v.jpg">
-
-  <!-- Profil -->
   <div class="profile">
     <img src="https://pomf2.lain.la/f/8rr7c2rp.jpg">
     <div class="profile-name">Grup-Public</div>
   </div>
 </div>
 
-<!-- ===== LINK ===== -->
 <a href="https://whatsapp.com/channel/0029Vax6b6w0gcfH0rw1tk0W" target="_blank" class="link-btn">
-  <i class="ri-broadcast-line"></i> Semua Grup ada disini
+📢 Semua Grup ada disini
 </a>
 
 <a href="https://chat.whatsapp.com/KVAIhIPZFnG26uB4anPVe2" target="_blank" class="link-btn">
-  <i class="ri-group-line"></i> Grup khusus chat Bot
+💬 Grup khusus chat Bot
 </a>
 
-<a href="https://wa.me/6281234567890" target="_blank" class="link-btn">
-  <i class="ri-user-3-line"></i> Owner
+<a href="https://wa.me/6285881199692" target="_blank" class="link-btn">
+👤 Owner
 </a>
 
-<a href="" target="_blank" class="link-btn">
-  <i class="ri-customer-service-2-line"></i> Support
+<a href="#" class="link-btn">
+🛠 Support
 </a>
 
-<!-- ===== ADMIN (4 ORANG) ===== -->
 <div class="slider">
-
   <div class="admin-card">
-    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2">
-    <div class="admin-status">🟢 Admin Aktif</div>
-    <div class="admin-name">Admin 1</div>
+    <img src="https://pomf2.lain.la/f/sm7rb10c.jpg">
+    <div class="admin-status">Owner</div>
+    <div class="admin-name">Rantokk</div>
   </div>
 
   <div class="admin-card">
-    <img src="https://pomf2.lain.la/f/44m6luli.jpg">
-    <div class="admin-status"> Admin </div>
-    <div class="admin-name">ulfa><div>
+    <img src="https://pomf2.lain.la/f/amx9mrjj.jpg">
+    <div class="admin-status">Admin</div>
+    <div class="admin-name">Ulfaa</div>
   </div>
 
   <div class="admin-card">
-    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d">
-    <div class="admin-status">🟢 Admin Aktif</div>
-    <div class="admin-name">Admin 3</div>
+    <img src="https://pomf2.lain.la/f/6iih2lyi.jpg">
+    <div class="admin-status">Admin</div>
+    <div class="admin-name">Alysia</div>
   </div>
 
   <div class="admin-card">
-    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330">
-    <div class="admin-status">🟢 Admin Aktif</div>
-    <div class="admin-name">Admin 4</div>
+    <img src="https://pomf2.lain.la/f/tq8wruxc.jpg">
+    <div class="admin-status">Admin</div>
+    <div class="admin-name">Icul</div>
   </div>
-
 </div>
 
-<!-- ===== CHAT BOT ===== -->
 <div class="chat-box">
-
-  <!-- Pesan -->
   <div id="chat" class="chat-msg">
 Halo 👋  
 Pilih topik di bawah ini.
   </div>
 
-  <!-- Tombol salin -->
   <button class="copy-btn" onclick="copyChat()">📋 Salin</button>
 
-  <!-- Tombol pilihan -->
   <div class="chat-btns">
     <button onclick="reply(1)">Info Saluran</button>
     <button onclick="reply(2)">Group-Bot</button>
-    <button onclick="reply(3)">cara masuk</button>
-    <button onclick="reply(4)">info Owner</button>
+    <button onclick="reply(3)">Cara Masuk</button>
+    <button onclick="reply(4)">Info Owner</button>
   </div>
 </div>
 
 <div class="footer">
-  © 2025 Ranto • All Link Groups
+© 2025 Ranto • All Link Groups
 </div>
 
 </div>
 
-<!-- ===== DATA YANG DISALIN (TERSEMBUNYI) ===== -->
 <div id="copyData" style="display:none"></div>
-
-<!-- ===== POPUP ===== -->
-<div id="popup" class="popup">sukses </div>
+<div id="popup" class="popup">Berhasil</div>
 
 <script>
-// ===== RESPON CHAT =====
 function reply(x){
-  const chat = document.getElementById("chat");
-  const copyData = document.getElementById("copyData");
+  const chat=document.getElementById("chat");
+  const copyData=document.getElementById("copyData");
 
   if(x==1){
-    chat.innerText =
-`Salin link saluran resmi di bawah ini`;
-    copyData.innerText = "https://whatsapp.com/channel/0029Vax6b6w0gcfH0rw1tk0W";
+    chat.innerText="Salin link saluran resmi di bawah ini";
+    copyData.innerText="https://whatsapp.com/channel/0029Vax6b6w0gcfH0rw1tk0W";
   }
-
   if(x==2){
-    chat.innerText =
-`Salin teks ini dan kirim ke WhatsApp`;
-    copyData.innerText = "https://chat.whatsapp.com/KVAIhIPZFnG26uB4anPVe2";
+    chat.innerText="Salin link grup bot di bawah ini";
+    copyData.innerText="https://chat.whatsapp.com/KVAIhIPZFnG26uB4anPVe2";
   }
-
   if(x==3){
-    chat.innerText =
-`kelik ikon (salin) di bawah dan kirim ke nomor kamu sendiri di WA`;
-    copyData.innerText = "Link saluran: https://whatsapp.com/channel/0029Vax6b6w0gcfH0rw1tk0W\nlink grup-Bot: https://chat.whatsapp.com/KVAIhIPZFnG26uB4anPVe2";
+    chat.innerText="Salin semua link dan kirim ke WA kamu";
+    copyData.innerText=
+"Saluran:\nhttps://whatsapp.com/channel/0029Vax6b6w0gcfH0rw1tk0W\n\nGrup Bot:\nhttps://chat.whatsapp.com/KVAIhIPZFnG26uB4anPVe2";
   }
-
   if(x==4){
-    chat.innerText =
-`Hubungi Admin melalui link berikut
-(Klik ikon salin)`;
-    copyData.innerText = "https://wa.me/6285881199692";
+    chat.innerText="Hubungi Owner";
+    copyData.innerText="https://wa.me/6285881199692";
   }
 }
 
-// ===== FUNGSI SALIN =====
 function copyChat(){
-  const text = document.getElementById("copyData").innerText;
-  if(!text) return;
-
+  const text=document.getElementById("copyData").innerText;
+  if(!text)return;
   navigator.clipboard.writeText(text);
-
-  const popup = document.getElementById("popup");
-  popup.innerText = "Berhasil disalin";
-  popup.style.opacity = "1";
-
-  setTimeout(()=>{
-    popup.style.opacity = "0";
-  },1500);
+  const popup=document.getElementById("popup");
+  popup.style.opacity="1";
+  setTimeout(()=>popup.style.opacity="0",1500);
 }
 </script>
 
