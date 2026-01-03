@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ranto allgrup</title>
+
+<!-- PANGGIL CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+  <img src="https://pomf2.lain.la/f/n6bai77v.jpg">
+  <div class="profile">
+    <img src="https://pomf2.lain.la/f/8rr7c2rp.jpg">
+    <div class="profile-name">Grup-Public</div>
+  </div>
+</div>
+
+<a href="https://whatsapp.com/channel/0029Vax6b6w0gcfH0rw1tk0W" target="_blank" class="link-btn">
+💢 Semua Grup ada disini
+</a>
+
+<a href="https://chat.whatsapp.com/KVAIhIPZFnG26uB4anPVe2" target="_blank" class="link-btn">
+🤖 Grup khusus chat Bot
+</a>
+
+<a href="https://wa.me/6285881199692" target="_blank" class="link-btn">
+👤 Owner
+</a>
+
+<a href="#" class="link-btn">
+💝 Support
+</a>
+
+<div class="slider">
+  <div class="admin-card">
+    <img src="https://pomf2.lain.la/f/sm7rb10c.jpg">
+    <div class="admin-status">Owner</div>
+    <div class="admin-name">Rantokk</div>
+  </div>
+
+  <div class="admin-card">
+    <img src="https://pomf2.lain.la/f/amx9mrjj.jpg">
+    <div class="admin-status">Admin</div>
+    <div class="admin-name">Ulfaa</div>
+  </div>
+
+  <div class="admin-card">
+    <img src="https://pomf2.lain.la/f/6iih2lyi.jpg">
+    <div class="admin-status">Admin</div>
+    <div class="admin-name">Alysia</div>
+  </div>
+
+  <div class="admin-card">
+    <img src="https://pomf2.lain.la/f/tq8wruxc.jpg">
+    <div class="admin-status">Admin</div>
+    <div class="admin-name">Icul</div>
+  </div>
+
+  <div class="admin-card">
+    <img src="https://pomf2.lain.la/f/mtjxnbyg.jpg">
+    <div class="admin-status">Admin</div>
+    <div class="admin-name">Ulan</div>
+  </div>
+</div>
+
+<div class="chat-box">
+  <div id="chat" class="chat-msg">
+Halo 👋  
+Pilih topik di bawah ini.
+  </div>
+
+  <button class="copy-btn" onclick="copyChat()">📋 Salin</button>
+
+  <div class="chat-btns">
+    <button onclick="reply(1)">Info Saluran</button>
+    <button onclick="reply(2)">Group-Bot</button>
+    <button onclick="reply(3)">Cara Masuk</button>
+    <button onclick="reply(4)">Info Owner</button>
+  </div>
+</div>
+
+<div class="footer">
+© 2025 Ranto • All Link Groups
+</div>
+
+</div>
+
+<div id="copyData" style="display:none"></div>
+<div id="popup" class="popup">Berhasil</div>
+
+<script>
+function reply(x){
+  const chat=document.getElementById("chat");
+  const copyData=document.getElementById("copyData");
+
+  if(x==1){
+    chat.innerText="Salin link saluran resmi di bawah ini";
+    copyData.innerText="https://whatsapp.com/channel/0029Vax6b6w0gcfH0rw1tk0W";
+  }
+  if(x==2){
+    chat.innerText="Salin link grup bot di bawah ini";
+    copyData.innerText="https://chat.whatsapp.com/KVAIhIPZFnG26uB4anPVe2";
+  }
+  if(x==3){
+    chat.innerText="Salin semua link dan kirim ke WA kamu";
+    copyData.innerText=
+"Saluran:\nhttps://whatsapp.com/channel/0029Vax6b6w0gcfH0rw1tk0W\n\nGrup Bot:\nhttps://chat.whatsapp.com/KVAIhIPZFnG26uB4anPVe2";
+  }
+  if(x==4){
+    chat.innerText="Hubungi Owner";
+    copyData.innerText="https://wa.me/6285881199692";
+  }
+}
+
+function copyChat(){
+  const text=document.getElementById("copyData").innerText;
+  if(!text)return;
+  navigator.clipboard.writeText(text);
+  const popup=document.getElementById("popup");
+  popup.style.opacity="1";
+  setTimeout(()=>popup.style.opacity="0",1500);
+}
+</script>
+
+</body>
+</html>
